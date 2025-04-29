@@ -60,7 +60,7 @@ Our models achieve up to **84% reduction in training time**, **85% reduction in 
 TBD
 ```
 
-> **Note**: Adjust the paths above based on your actual repo organization!
+
 
 ---
 
