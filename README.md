@@ -57,17 +57,7 @@ Our models achieve up to **84% reduction in training time**, **85% reduction in 
 ## 📂 Repo Structure
 
 ```bash
-├── Robinson_Basantani_W266.pdf   # Final paper
-├── README.md                     # (You're here!)
-├── /code/                        # Scripts for training, pruning, distillation
-│   ├── train_baseline.py
-│   ├── prune_layers.py
-│   ├── distill_model.py
-│   ├── lora_finetune.py
-├── /models/                      # Saved trained models
-├── /data/                        # Scripts to load/prepare Moral Stories dataset
-│   └── download_dataset.py
-├── /results/                     # Training logs, evaluation outputs, plots
+TBD
 ```
 
 > **Note**: Adjust the paths above based on your actual repo organization!
@@ -90,29 +80,7 @@ Our models achieve up to **84% reduction in training time**, **85% reduction in 
    cd moral-norm-classifier
    ```
 
-2. Set up a Python environment (Python 3.8+ recommended):
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Fine-tune the baseline model:
-   ```bash
-   python code/train_baseline.py
-   ```
-
-4. Apply LoRA fine-tuning:
-   ```bash
-   python code/lora_finetune.py
-   ```
-
-5. Prune a model:
-   ```bash
-   python code/prune_layers.py
-   ```
-
-6. Distill a student model:
-   ```bash
-   python code/distill_model.py
+TBD
    ```
 
 ---
