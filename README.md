@@ -1,4 +1,3 @@
-
 # Efficient Moral Judgment: Lightweight Classifier for Ethical Decision-Making
 
 This repository contains all the code, models, and experiments used in the paper:
@@ -57,38 +56,39 @@ Our models achieve up to **84% reduction in training time**, **85% reduction in 
 ## 📂 Repo Structure
 
 ```bash
-TBD
+├── Robinson_Basantani_W266.pdf                             # Final paper
+├── README.md                                               # This file
+├── Layer_Pruning_roberta_base.ipynb                        # Pruning on RoBERTa-base
+├── Layer_Pruning_roberta_large.ipynb                       # Pruning on RoBERTa-large
+├── Moral_stories_DistilBERT.ipynb                          # Distillation experiments with DistilBERT
+├── Moral_stories_Transformer_Action_(ATR)_Partial_Fine_Tuning.ipynb     # Partial fine-tuning on action-only input
+├── Moral_stories_Transformer_BL_Action_(ATR).ipynb         # Baseline model on action-only input
+├── Moral_stories_Transformer_BL_Action_+_Norm_(ATR).ipynb  # Baseline model with action + norm
+├── Moral_stories_Transformer_BL_Action_+_Norm_+_Consequence_(ATR).ipynb  # Baseline model with full input
 ```
-
-
-
----
-
-## 📁 Dataset
-
-- **Moral Stories Dataset**: [HuggingFace Link](https://huggingface.co/datasets/demelin/moral_stories)
-- Provides structured narratives with normative and divergent actions tied to societal norms.
-- Fine-tuned and evaluated models were trained primarily using the **action-only** setting (i.e., without consequences).
 
 ---
 
 ## 🚀 Quickstart
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/moral-norm-classifier.git
-   cd moral-norm-classifier
-   ```
+Clone the repository and explore the experiments directly through the provided Jupyter Notebooks:
 
-TBD
-   ```
+- [Layer_Pruning_roberta_base.ipynb](./Layer_Pruning_roberta_base.ipynb)
+- [Layer_Pruning_roberta_large.ipynb](./Layer_Pruning_roberta_large.ipynb)
+- [Moral_stories_DistilBERT.ipynb](./Moral_stories_DistilBERT.ipynb)
+- [Moral_stories_Transformer_Action_(ATR)_Partial_Fine_Tuning.ipynb](./Moral_stories_Transformer_Action_(ATR)_Partial_Fine_Tuning.ipynb)
+- [Moral_stories_Transformer_BL_Action_(ATR).ipynb](./Moral_stories_Transformer_BL_Action_(ATR).ipynb)
+- [Moral_stories_Transformer_BL_Action_+_Norm_(ATR).ipynb](./Moral_stories_Transformer_BL_Action_+_Norm_(ATR).ipynb)
+- [Moral_stories_Transformer_BL_Action_+_Norm_+_Consequence_(ATR).ipynb](./Moral_stories_Transformer_BL_Action_+_Norm_+_Consequence_(ATR).ipynb)
+
+Each notebook is self-contained and documents the setup, training, and evaluation procedures for the respective models.
 
 ---
 
 ## 👥 Authors
 
-- **Hitesh Basantani** – [hitesh.basantani@ischool.berkeley.edu](mailto:hitesh.basantani@ischool.berkeley.edu)
-- **Alice Robinson** – [alice.robinson@ischool.berkeley.edu](mailto:alice.robinson@ischool.berkeley.edu)
+- **Hitesh Basantani** — [hitesh.basantani@ischool.berkeley.edu](mailto:hitesh.basantani@ischool.berkeley.edu)
+- **Alice Robinson** — [alice.robinson@ischool.berkeley.edu](mailto:alice.robinson@ischool.berkeley.edu)
 
 ---
 
@@ -107,7 +107,7 @@ If you use this work, please cite it as:
 
 ---
 
-## 🔒 License
+## 🔮 License
 
 This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
 
@@ -115,3 +115,12 @@ This project is licensed under the MIT License — see the [LICENSE](./LICENSE) 
 MIT License
 ...
 ```
+
+---
+
+## 🔬 Future Work
+
+- Training for multiple epochs for more stable evaluations.
+- Careful hyperparameter tuning of distillation (temperature, loss weighting).
+- Exploring quantization (e.g., float16 inference) for even lighter models.
+- Systematic hybrid compression methods (pruning + LoRA + distillation).
