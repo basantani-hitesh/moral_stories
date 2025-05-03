@@ -107,16 +107,6 @@ If you use this work, please cite it as:
 
 ---
 
-## 🔮 License
-
-This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
-
-```text
-MIT License
-...
-```
-
----
 
 ## 🔬 Future Work
 
